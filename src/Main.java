@@ -7,8 +7,8 @@ public class Main
     {
 	// Convert C to F
         Scanner in = new Scanner(System.in);
-        double cels;
-        double fahren;
+        double cels = 0;
+        double fahren = 0;
         String trash;
 
 
@@ -16,7 +16,7 @@ public class Main
 
             if (in.hasNextDouble())
             {
-                cels =in.nextDouble();
+                cels = in.nextDouble();
                 in.nextLine();
                 fahren = (cels * 1.8) + 32;
                 System.out.println("\n The temperature in Fahrenheit is " + fahren);
